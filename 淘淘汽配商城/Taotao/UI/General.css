@@ -1,0 +1,14 @@
+﻿/*通用样式表*/
+body {
+
+}
+* {
+    margin:0px;
+    padding:0px;
+    text-decoration:none;
+    font-size:12px;
+    list-style:none;
+}
+a img{
+    border:none;
+}

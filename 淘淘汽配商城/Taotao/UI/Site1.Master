@@ -1,0 +1,486 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="UI.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     <style type="text/css">
+        body {
+            margin:0px;
+            left:0px;
+        }
+          boby {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: orange;
+        }
+        /*#wrapper {
+            width:1349px;
+            height:2000px;
+            border:0px solid black;
+            margin:0px auto;
+        }*/
+        #header #all {
+            width: 100%;
+            height: 33px;
+            border: 1px dashed #999;
+            background-color: #fbfbfb;
+        }
+
+        #menu {
+            margin: 0px auto;
+            width: 985px;
+            height: 33px;
+        }
+
+            #menu ul li {
+                float: left;
+                line-height: 33px;
+                height: 33px;
+            }
+
+                #menu ul li.city {
+                    width: 602px;
+                    font-weight: bold;
+                }
+
+                #menu ul li.space {
+                    margin: 0px 12px;
+                }
+        #search {
+            width:910px;
+            height:136px;
+            border:0px solid black;
+            margin:0px auto;
+        }
+            #search ul {
+                list-style:none;
+            }
+            #search ul li {
+                float:left;
+                height:136px;
+                line-height:136px;
+                
+            }
+                #search ul li .logo {
+                    margin-right:100px;
+                    
+                }
+                #search ul li .se {                   
+                    height:40px;
+                }
+            #search input#setxt {
+                height:38px;
+                line-height:38px;
+                border:1px solid #159407;
+                width:405px;   
+                padding-left:40px;           
+            }
+            #search input#btn {
+                width:70px;
+                height:43px;
+                border:0px solid #fff;
+                background-image:url(Image/blackmenu.jpg);
+                background-position:left;
+                background-repeat:no-repeat;
+            }
+            * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        ul {
+            list-style:none;
+        }
+        a {
+            text-decoration :none;
+            color:Black;
+        }
+        a img {
+            border: none;
+        }
+        #a {
+            height:1470px;
+            width:1350px;
+        }       
+         #allnav {
+            width: 1349px;
+            background-color: #159407;
+            height: 39px;
+            border: 1px dashed #159407;
+        }
+         #nav {
+             width:923px;
+             margin:0px auto;
+            background-color:#159407;
+            height: 39px;
+        }
+       
+      
+         #nav ul li {
+                float: left;
+                background-color:#159407;
+            }
+           #nav ul li a {
+                    float: left;
+                    padding: 0px 16px;
+                    height: 39px;
+                    line-height: 39px;
+                    display: block;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: white;
+                }
+           #allnav #nav ul li:hover {
+                    background-color: #ff8c00;
+                }
+           #allnav #nav ul li:hover ul {
+                        text-align: center;
+                        display: block;
+                        position: absolute;
+                        height: 35px;
+                        width: 123px;
+                        background-color:#159407;
+                        top: 35px;
+                        left: 0px;
+                        float: none;
+                    }
+           #allnav #nav ul li ul li {
+                    text-align: center;
+                    height: 35px;
+                    width: 123px;
+                    background-color:#159407;
+                }
+           #allnav #nav ul li.menuList {
+                    background-image: url(images/arrow-down.gif);
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    position: relative;
+                }
+           #allnav #nav ul li ul {
+                    display: none;
+                }
+
+        .b {
+            margin:0px auto; 
+            float :left;
+            margin-left :150px;
+            text-align :center;
+        }
+        .b >a {
+            color :white;
+            font-weight :bold;
+        }
+        .c {
+            position :relative;
+        }
+       .c ul {
+                text-align :center;
+                top:39px;
+                left:210px;
+                position :absolute ;
+                width :200px;
+               
+            }
+            .c li {
+                 width :140px;
+                 border :1px solid #93e25a;
+            }
+        #top {
+            height :500px;
+            width :710px;
+            border :0px solid black;
+            margin-left :230px;
+             margin:0px auto; 
+        }
+        #d {
+            height :270px;
+            width :700px;
+            overflow :hidden ;
+            position :relative;
+        }
+        #imgarea li{
+            width :690px;
+            height :270px;
+        }
+        #imgid {
+            position :absolute ;
+            right :50px;
+            bottom:5px;
+            z-index :100;
+        }
+        #imgid li {
+            float :left;
+            color :#069;
+            text-align :center;
+            line-height :16px;
+            width :16px;
+            height :16px;
+            font-family :Arial ;
+            font-size :12px;
+            cursor :pointer ;
+            overflow :hidden ;
+            margin :3px 1px;
+            border:1px solid #069;
+            background-color :#fff;
+        }
+        #imgid li.active {
+                color: #fff;
+                line-height: 16px;
+                width: 16px;
+                height: 16px;
+                font-size: 14px;
+                margin: 3px 1px;
+                background-color: #71ca32;
+                font-weight :bold ;
+            }
+        #e {
+            height:30px;
+            line-height :30px;
+        }
+            #e>p {
+                color :red;
+                font-weight :bold ;
+                display :block ;
+                float :left;
+            }
+        #f {
+            height :190px;
+            width :700px;
+            border :0px solid black;
+        }
+          #g {
+            height:30px;
+            line-height :30px;
+            width :710px;
+            margin :5px 130px;
+        }
+           #g>p {
+                color :red;
+                font-weight :bold ;
+                display :block ;
+                float :left;
+            }
+        
+      #f{ 
+          margin-top:15px;
+          border:0px #ccc solid; 
+          border-top:3px #090 solid; 
+          height:155px; 
+          overflow:hidden;
+          width:700px
+      }
+      #f ul {
+        width: 990px; 
+      }
+      #f ul li{ 
+          border-left:1px #CCC solid;
+          width:160px; 
+          padding:9px; 
+          float:left; 
+          height:135px;
+          margin-left :30px 10px;
+      }
+    #f ul li a{ 
+        font-size:14px; 
+        font-weight:bold;
+        color:#333; 
+        line-height:23px;
+    }
+    #f ul li a:hover{
+        font-size:12px;  
+        line-height:23px; 
+        color:red ; 
+    }
+    /*#bottom {
+        overflow:auto; 
+        height:1500px;
+        width :900px;
+        border :0px solid black;
+        margin-left :130px;
+    }
+    #bottom ul li{ 
+        float:left; 
+        width:200px; 
+        height:250px; 
+        background-color:#f5f3f3; 
+        border:0px #dedede solid; 
+        padding:10px; 
+        margin-bottom:10px; 
+    }*/
+    .tuangouy-m{ 
+        color:#666666;
+        font-size:12px;
+    }
+    .tuangouy-m a{  
+        font-weight:bold; 
+        line-height:20px; 
+        color:#666666;
+    }
+    .tuangouy-m a:hover{ 
+        font-weight:bold; 
+        line-height:20px; 
+        color:#F00; 
+    }
+    .tuangouy-m span{ 
+        font-size:14px; 
+        font-weight:bold; 
+        color:#F30; 
+        line-height:30px;
+        font-family:"微软雅黑";
+    }
+        
+#buttom_s {
+width:100%;
+height:100px;
+}
+
+div.buttom_ss {
+width:450px;
+height:100px;
+margin:10px auto;
+}
+
+div.buttom_ss span{
+    color:#808080;
+    font-size:12px;
+    text-align:center;
+    line-height:30px;
+}
+
+  #bottom {
+            width: 1014px;
+            margin: 0px auto;
+            clear: both; /*清除浮动的影响*/
+        }         
+           /*代表每个酒店的dl*/
+            #bottom dl {
+                width: 310px;
+                height: 275px;
+                border: 1px solid #ccc;
+                padding: 8px;
+                margin-bottom: 10px;
+                float: left;
+                margin-right: 9px;
+            }
+
+           #bottom dl:hover {
+               border:1px dashed red;
+            }
+
+            #bottom div {
+                overflow: hidden; /*子元素是浮动的，父元素高度是0，浮动塌陷*/
+            }
+
+            #bottom dl dd.name {
+                font: bold 15px Verdana, Geneva, sans-serif;
+                padding-top: 5px; /*名称和图片之间的间隔*/
+            }
+
+            #bottom dl dd {
+                line-height: 25px;
+            }
+
+                #bottom dl dd span {
+                    color: orange;
+                    font: bold 16px Verdana, Geneva, sans-serif;
+                }
+
+                #bottom dl dd.price {
+                    float: left;
+                    width: 200px;
+                }
+
+                #bottom dl dd.number {
+                    float: right;
+                }
+                 #mild {
+            width:923px;
+            height:300px;
+            margin:0px auto;
+        }
+.btnMinus,.btnAdd {
+            border: 1px solid black;
+            background-color: white;
+            width: 25px;
+            height: 25px;
+        }
+ .txt {
+            width: 60px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            font: bold 15px/30px Verdana,Geneva,sans-serif;
+        }
+        .txt:hover {
+                border: 1px solid red;
+            }
+         .zi {
+            color:#f00;
+        }
+         #er {
+           background-color :#f7f4eb;
+           height :24px;
+           border :1px solid #dec8b0;
+           color :#8a7152;
+           font-size:15px;
+         }
+             #er td {
+                  padding-left :35px;
+             }
+         .abc {
+             margin:0px auto;
+         }
+             .abc li {
+                 list-style:none;
+                 float:left;
+                 margin-left:650px;
+             }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <%--<div id="wrapper">--%>
+    <div id="header">
+        <div id="all">
+            <div id="menu">
+                <ul>
+                    <li class="city">武汉<a href="#">[切换城市]</a></li>             
+                    <li class="space"><span></span><a href="cart.aspx" target="_parent">购物车</a></li>
+                    <li class="space"><a href="Login.aspx" target="_parent">[登录]</a></li>
+                    <li class="space"><a href="zhuce.aspx" target="_parent">[注册]</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div id="search">
+            <ul>
+                <li class="logo"><a href="#"><img src="Image/logo.png" /></a></li>
+                <li class="se">
+                   
+                        <input type="text" id="setxt" /><input type="button" value="搜索" id="btn" style="position:relative;top:-1px;left:0px" />
+                 
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       <div id="buttom_s">
+                <div class="buttom_ss">
+                    <span>CopyRight &copy; 2007-2017 Taotao Inc.All Rigths Reserved 沪ICP备02110488号</span><br />
+                    <span>上海淘淘科技有限公司 版权所有 站长统计 服务邮箱：service@taotao.com</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

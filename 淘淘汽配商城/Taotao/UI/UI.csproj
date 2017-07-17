@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3CD51B11-C987-4606-AF0E-D17033FAD766}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2011\634703436961093750.jpg" />
+    <Content Include="2011\634703439114531250.jpg" />
+    <Content Include="2011\634703634085781250.jpg" />
+    <Content Include="2011\634703636159375000.jpg" />
+    <Content Include="2011\634703636447500000.jpg" />
+    <Content Include="2011\634703637455468750.jpg" />
+    <Content Include="2011\634703638458593750.jpg" />
+    <Content Include="2011\634703639016093750.jpg" />
+    <Content Include="2011\634703639754218750.jpg" />
+    <Content Include="2011\634703641698593750.jpg" />
+    <Content Include="2011\634703641901406250.jpg" />
+    <Content Include="2011\634703642575468750.jpg" />
+    <Content Include="2011\634703643427968750.jpg" />
+    <Content Include="2011\634703656152812500.jpg" />
+    <Content Include="2011\634703656477187500.jpg" />
+    <Content Include="2011\634703656798281250.jpg" />
+    <Content Include="2011\634703661463906250.JPG" />
+    <Content Include="2011\634703662240781250.jpg" />
+    <Content Include="2011\634703662944218750.jpg" />
+    <Content Include="2011\634703664908750000.jpg" />
+    <Content Include="2011\634703670079062500.jpg" />
+    <Content Include="2011\634703671088906250.jpg" />
+    <Content Include="2011\634703672440312500.jpg" />
+    <Content Include="2011\634703673282812500.jpg" />
+    <Content Include="2011\634703674501093750.jpg" />
+    <Content Include="2011\634703675623281250.jpg" />
+    <Content Include="2011\634703676533593750.jpg" />
+    <Content Include="2011\634703677810000000.jpg" />
+    <Content Include="2011\634705107845468750.jpg" />
+    <Content Include="2011\634705109341875000.jpg" />
+    <Content Include="2011\634705110293906250.jpg" />
+    <Content Include="2011\634705113477968750.jpg" />
+    <Content Include="2011\634705189059375000.JPG" />
+    <Content Include="2011\634705190169375000.jpg" />
+    <Content Include="2011\634705191112500000.jpg" />
+    <Content Include="2011\634705192541718750.jpg" />
+    <Content Include="2011\634705193389375000.jpg" />
+    <Content Include="2011\634716361868906250.JPG" />
+    <Content Include="2011\635436274821565264.png" />
+    <Content Include="2011\暂无图片.png" />
+    <Content Include="adminimage\!.gif" />
+    <Content Include="adminimage\ad.gif" />
+    <Content Include="adminimage\add.gif" />
+    <Content Include="adminimage\back.gif" />
+    <Content Include="adminimage\bg.gif" />
+    <Content Include="adminimage\bigsize.jpg" />
+    <Content Include="adminimage\bootnbg.jpg" />
+    <Content Include="adminimage\bullet.gif" />
+    <Content Include="adminimage\buttom-copy-bg.gif" />
+    <Content Include="adminimage\buttom-left.gif" />
+    <Content Include="adminimage\buttom-right.gif" />
+    <Content Include="adminimage\buttom_bgs.gif" />
+    <Content Include="adminimage\buttom_left2.gif" />
+    <Content Include="adminimage\buttom_right2.gif" />
+    <Content Include="adminimage\card.jpg" />
+    <Content Include="adminimage\check-out_.gif" />
+    <Content Include="adminimage\close.gif" />
+    <Content Include="adminimage\content-bg-line.gif" />
+    <Content Include="adminimage\content-bg.gif" />
+    <Content Include="adminimage\database_import_.gif" />
+    <Content Include="adminimage\DefaultDocs.gif" />
+    <Content Include="adminimage\defind.gif" />
+    <Content Include="adminimage\del.jpg" />
+    <Content Include="adminimage\delete.gif" />
+    <Content Include="adminimage\delete_6.gif" />
+    <Content Include="adminimage\edit.gif" />
+    <Content Include="adminimage\ershou_1.gif" />
+    <Content Include="adminimage\ershou_2.gif" />
+    <Content Include="adminimage\format.gif" />
+    <Content Include="adminimage\fox.css" />
+    <Content Include="adminimage\g.gif" />
+    <Content Include="adminimage\gw.gif" />
+    <Content Include="adminimage\gw2.gif" />
+    <Content Include="adminimage\icon-demo.gif" />
+    <Content Include="adminimage\icon-login-seaver.gif" />
+    <Content Include="adminimage\icon-mail2.gif" />
+    <Content Include="adminimage\icon-phone.gif" />
+    <Content Include="adminimage\icon2_004.png" />
+    <Content Include="adminimage\icon2_089.png" />
+    <Content Include="adminimage\icon2_090.png" />
+    <Content Include="adminimage\imagedelete.gif" />
+    <Content Include="adminimage\imageedit.gif" />
+    <Content Include="adminimage\image_%28add%296.gif" />
+    <Content Include="adminimage\image_1.gif" />
+    <Content Include="adminimage\ipsecurity.gif" />
+    <Content Include="adminimage\l1b3.gif" />
+    <Content Include="adminimage\l1b4.gif" />
+    <Content Include="adminimage\l1b5.gif" />
+    <Content Include="adminimage\left-bg.gif" />
+    <Content Include="adminimage\left-top-right.gif" />
+    <Content Include="adminimage\line2.jpg" />
+    <Content Include="adminimage\linkspic3.gif" />
+    <Content Include="adminimage\linkspic6.gif" />
+    <Content Include="adminimage\lm.gif" />
+    <Content Include="adminimage\lminfo.gif" />
+    <Content Include="adminimage\login-buttom-bg.gif" />
+    <Content Include="adminimage\login-content-bg.gif" />
+    <Content Include="adminimage\login-top-bg.gif" />
+    <Content Include="adminimage\login-wel.gif" />
+    <Content Include="adminimage\login_bg.jpg" />
+    <Content Include="adminimage\Login_but.gif" />
+    <Content Include="adminimage\logo.png" />
+    <Content Include="adminimage\luck.gif" />
+    <Content Include="adminimage\mail_leftbg.gif" />
+    <Content Include="adminimage\mail_rightbg.gif" />
+    <Content Include="adminimage\menu_bg.gif" />
+    <Content Include="adminimage\menu_bg1.gif" />
+    <Content Include="adminimage\menu_bg2.gif" />
+    <Content Include="adminimage\menu_bgs.gif" />
+    <Content Include="adminimage\menu_topimg.gif" />
+    <Content Include="adminimage\menu_topline.gif" />
+    <Content Include="adminimage\mime.gif" />
+    <Content Include="adminimage\nav-right-bg.gif" />
+    <Content Include="adminimage\news-title-bg.gif" />
+    <Content Include="adminimage\ok.gif" />
+    <Content Include="adminimage\OK.jpg" />
+    <Content Include="adminimage\out.gif" />
+    <Content Include="adminimage\password.gif" />
+    <Content Include="adminimage\pic1.gif" />
+    <Content Include="adminimage\pic10.gif" />
+    <Content Include="adminimage\pic11.gif" />
+    <Content Include="adminimage\pic12.gif" />
+    <Content Include="adminimage\pic13.gif" />
+    <Content Include="adminimage\pic14.gif" />
+    <Content Include="adminimage\pic15.gif" />
+    <Content Include="adminimage\pic16.gif" />
+    <Content Include="adminimage\pic17.gif" />
+    <Content Include="adminimage\pic18.gif" />
+    <Content Include="adminimage\pic19.gif" />
+    <Content Include="adminimage\pic21.gif" />
+    <Content Include="adminimage\pic22.gif" />
+    <Content Include="adminimage\pic23.gif" />
+    <Content Include="adminimage\pic24.gif" />
+    <Content Include="adminimage\pic25.gif" />
+    <Content Include="adminimage\pic26.gif" />
+    <Content Include="adminimage\pic5.gif" />
+    <Content Include="adminimage\pic6.gif" />
+    <Content Include="adminimage\pic7.gif" />
+    <Content Include="adminimage\pic8.gif" />
+    <Content Include="adminimage\pic9.gif" />
+    <Content Include="adminimage\Redirects.gif" />
+    <Content Include="adminimage\report2_%28add%29.gif" />
+    <Content Include="adminimage\report2_%28delete%29.gif" />
+    <Content Include="adminimage\right_smbg.jpg" />
+    <Content Include="adminimage\servicezhgb2312.gif" />
+    <Content Include="adminimage\set.gif" />
+    <Content Include="adminimage\set2.gif" />
+    <Content Include="adminimage\sitebackup.gif" />
+    <Content Include="adminimage\skin.css" />
+    <Content Include="adminimage\smallbg.jpg" />
+    <Content Include="adminimage\st.gif" />
+    <Content Include="adminimage\st.png" />
+    <Content Include="adminimage\stop.gif" />
+    <Content Include="adminimage\str.gif" />
+    <Content Include="adminimage\Submit_bg.gif" />
+    <Content Include="adminimage\t2bg1.gif" />
+    <Content Include="adminimage\t2bg2.gif" />
+    <Content Include="adminimage\t2bg4.gif" />
+    <Content Include="adminimage\t2bg5.gif" />
+    <Content Include="adminimage\title.gif" />
+    <Content Include="adminimage\tj.jpg" />
+    <Content Include="adminimage\to.gif" />
+    <Content Include="adminimage\tool-down-pic.gif" />
+    <Content Include="adminimage\top-right.gif" />
+    <Content Include="adminimage\top_bt.jpg" />
+    <Content Include="adminimage\ts.gif" />
+    <Content Include="adminimage\user-info.gif" />
+    <Content Include="adminimage\usercontrol.gif" />
+    <Content Include="adminimage\vie.gif" />
+    <Content Include="adminimage\welcome.png" />
+    <Content Include="adminimage\X.gif" />
+    <Content Include="adminimage\yc.gif" />
+    <Content Include="adminimage\yx.gif" />
+    <Content Include="cart.aspx" />
+    <Content Include="Class\ClassAdd.aspx" />
+    <Content Include="Class\List.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="dingdan.aspx" />
+    <Content Include="Frame\LeftFrame.aspx" />
+    <Content Include="Frame\MainFrame.aspx" />
+    <Content Include="Frame\TopFrame.aspx" />
+    <Content Include="General.css" />
+    <Content Include="Gouwuche.aspx" />
+    <Content Include="HLogin.aspx" />
+    <Content Include="Image\ad0.gif" />
+    <Content Include="Image\add-to-cart.gif" />
+    <Content Include="Image\app.PNG" />
+    <Content Include="Image\banner1.jpg" />
+    <Content Include="Image\banner2.jpg" />
+    <Content Include="Image\banner3.jpg" />
+    <Content Include="Image\banner4.jpg" />
+    <Content Include="Image\banner5.jpg" />
+    <Content Include="Image\beijing.jpg" />
+    <Content Include="Image\blackmenu.jpg" />
+    <Content Include="Image\center_1_90304.gif" />
+    <Content Include="Image\center_4_90304.gif" />
+    <Content Include="Image\code.gif" />
+    <Content Include="Image\code_img.gif" />
+    <Content Include="Image\contleftboot.png" />
+    <Content Include="Image\divideline.PNG" />
+    <Content Include="Image\end_90304.png" />
+    <Content Include="Image\footer_x_bg.gif" />
+    <Content Include="Image\goods_bg.gif" />
+    <Content Include="Image\header_x_bg.png" />
+    <Content Include="Image\head_90304.gif" />
+    <Content Include="Image\hotproducts00.jpg" />
+    <Content Include="Image\hotproducts01.jpg" />
+    <Content Include="Image\hotproducts02.jpg" />
+    <Content Include="Image\logo.png" />
+    <Content Include="Image\phone-bg.jpg" />
+    <Content Include="Image\product_y_bg.gif" />
+    <Content Include="Image\QQ图片20170329091734.jpg" />
+    <Content Include="Image\repeater.png" />
+    <Content Include="Image\search-bg.png" />
+    <Content Include="Image\sign.png" />
+    <Content Include="Image\toleft.png" />
+    <Content Include="Image\toleft0.png" />
+    <Content Include="Image\toright.png" />
+    <Content Include="Image\toright0.png" />
+    <Content Include="Image\wuyihuodong.png" />
+    <Content Include="Image\xuxian.png" />
+    <Content Include="Image\分割线.png" />
+    <Content Include="Image\去结算.png" />
+    <Content Include="Image\完成注册.png" />
+    <Content Include="Image\我的购物车.png" />
+    <Content Include="Image\提交订单.png" />
+    <Content Include="Image\未标题-1.jpg" />
+    <Content Include="Image\灰色按钮.png" />
+    <Content Include="Image\结账.png" />
+    <Content Include="Image\继续购物.png" />
+    <Content Include="Image\蓝色按钮.png" />
+    <Content Include="Image\购买.png" />
+    <Content Include="Image\购物流程1.png" />
+    <Content Include="Image\购物流程2.png" />
+    <Content Include="Image\购物流程3.png" />
+    <Content Include="jquery-3.1.1.min.js" />
+    <Content Include="liebiao.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="menu.xml" />
+    <Content Include="Order\Chakan.aspx" />
+    <Content Include="Order\List.aspx" />
+    <Content Include="Pic\634705190169375000.jpg" />
+    <Content Include="Pic\634705193389375000.jpg" />
+    <Content Include="Pic\a.jpg" />
+    <Content Include="Pic\b.jpg" />
+    <Content Include="Pic\banner1.jpg" />
+    <Content Include="Pic\banner2.jpg" />
+    <Content Include="Pic\banner3.jpg" />
+    <Content Include="Pic\banner4.jpg" />
+    <Content Include="Pic\banner5.jpg" />
+    <Content Include="Pic\c.jpg" />
+    <Content Include="Pic\d.jpg" />
+    <Content Include="Pic\e.jpg" />
+    <Content Include="Pic\f.jpg" />
+    <Content Include="Pic\g.jpg" />
+    <Content Include="Pic\h.JPG" />
+    <Content Include="Pic\i.jpg" />
+    <Content Include="Pic\j.jpg" />
+    <Content Include="Pic\k.jpg" />
+    <Content Include="Pic\l.jpg" />
+    <Content Include="Pic\m.jpg" />
+    <Content Include="Pic\n.jpg" />
+    <Content Include="Pic\o.jpg" />
+    <Content Include="Pic\p.jpg" />
+    <Content Include="Pic\q.jpg" />
+    <Content Include="Products\List.aspx" />
+    <Content Include="Products\ProductAdd.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="shop.aspx" />
+    <Content Include="shouye.aspx" />
+    <Content Include="tianjia.aspx" />
+    <Content Include="UserInfos\List.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="zhuce.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ClassAdd.aspx.cs">
+      <DependentUpon>ClassAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\ClassAdd.aspx.designer.cs">
+      <DependentUpon>ClassAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dingdan.aspx.cs">
+      <DependentUpon>dingdan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dingdan.aspx.designer.cs">
+      <DependentUpon>dingdan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\LeftFrame.aspx.cs">
+      <DependentUpon>LeftFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\LeftFrame.aspx.designer.cs">
+      <DependentUpon>LeftFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\MainFrame.aspx.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\MainFrame.aspx.designer.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\TopFrame.aspx.cs">
+      <DependentUpon>TopFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\TopFrame.aspx.designer.cs">
+      <DependentUpon>TopFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gouwuche.aspx.cs">
+      <DependentUpon>Gouwuche.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gouwuche.aspx.designer.cs">
+      <DependentUpon>Gouwuche.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HLogin.aspx.cs">
+      <DependentUpon>HLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HLogin.aspx.designer.cs">
+      <DependentUpon>HLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="liebiao.aspx.cs">
+      <DependentUpon>liebiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="liebiao.aspx.designer.cs">
+      <DependentUpon>liebiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Chakan.aspx.cs">
+      <DependentUpon>Chakan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Chakan.aspx.designer.cs">
+      <DependentUpon>Chakan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductAdd.aspx.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\ProductAdd.aspx.designer.cs">
+      <DependentUpon>ProductAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shop.aspx.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shop.aspx.designer.cs">
+      <DependentUpon>shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shouye.aspx.cs">
+      <DependentUpon>shouye.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shouye.aspx.designer.cs">
+      <DependentUpon>shouye.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="tianjia.aspx.cs">
+      <DependentUpon>tianjia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tianjia.aspx.designer.cs">
+      <DependentUpon>tianjia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfos\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfos\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zhuce.aspx.cs">
+      <DependentUpon>zhuce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zhuce.aspx.designer.cs">
+      <DependentUpon>zhuce.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminimage\Thumbs.db" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{f97093b2-2ee4-4319-b0fe-a30ca5d204ff}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{4ef39c7d-a5e0-4acc-916b-4e3adeda93f6}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1678/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

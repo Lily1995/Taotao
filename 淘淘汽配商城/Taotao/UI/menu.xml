@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMapNode url="" title="后台管理">
+  <siteMapNode url="" title="用户管理">
+    <siteMapNode url="~/UserInfos/List.aspx" title="用户列表"/>
+  </siteMapNode>
+  <siteMapNode url="" title="分类管理">
+    <siteMapNode url="~/Class/List.aspx" title="分类列表"/>
+    <siteMapNode url="~/Class/ClassAdd.aspx" title="添加分类"/>
+  </siteMapNode>
+  <siteMapNode url="" title="商品管理">
+    <siteMapNode url="~/Products/List.aspx" title="商品列表"/>
+    <siteMapNode url="~/Products/ProductAdd.aspx" title="添加商品"/>
+  </siteMapNode>
+  <siteMapNode url="" title="订单管理">
+    <siteMapNode url="~/Order/Chakan.aspx" title="订单列表"/>
+    <siteMapNode url="~/Order/List.aspx" title="订单列表"/>
+  </siteMapNode>
+</siteMapNode>

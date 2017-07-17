@@ -1,0 +1,10 @@
+E:\qipai\Taotao\Models\bin\Debug\Models.dll
+E:\qipai\Taotao\Models\bin\Debug\Models.pdb
+E:\qipai\Taotao\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\qipai\Taotao\Models\obj\Debug\Models.dll
+E:\qipai\Taotao\Models\obj\Debug\Models.pdb
+F:\qipai\Taotao\Models\bin\Debug\Models.dll
+F:\qipai\Taotao\Models\bin\Debug\Models.pdb
+F:\qipai\Taotao\Models\obj\Debug\Models.dll
+F:\qipai\Taotao\Models\obj\Debug\Models.pdb
+F:\qipai\Taotao\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
